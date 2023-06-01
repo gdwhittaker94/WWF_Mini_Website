@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts.js" defer></script>
+    <!--* Media Queries -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../index/desktop.css"
+      media="screen and (min-width: 1080px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../index/tablet.css"
+      media="screen and (min-width: 751px) and (max-width: 1079px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../index/mobile.css"
+      media="screen and (max-width: 750px)"
+    />
+    <!--* Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--* Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--* Title -->
+    <title>WWF Mini Website</title>
+  </head>
+  <body>
+    <!-- * NAV BAR (black line: mobile + tablet, transparent: desktop)-->
+
+    <nav class="navbar">
+      <div class="navbar__cntr">
+        <div class="navbar__logo">
+          <img class="navbar__image" src="../img/icon_logo/WWF_logo.svg.png" alt="WWF Logo" />
+          <span class="navbar__bar"></span>
+          <p class="navbar__country">Australia</p>
+        </div>
+
+        <div class="navbarDesktop">
+          <div class="nav__searchbar">
+            <img src="../img/icon_logo/magnifying glass.svg" alt="magnifying glass" />
+            <input type="search" placeholder="Search" />
+          </div>
+          <p>What we do</p>
+          <p>About us</p>
+          <p>Our stories</p>
+          <p>Get Involved</p>
+        </div>
+
+        <div class="button button--orange">
+          <a href="../news/news.html">
+            <p class="button__text">News Page</p>
+          </a>
+        </div>
+
+        <div class="button button--yellow">
+            <a href="../meet_the_team/meet_the_team.html">
+              <p class="button__text">
+                Meet Our Team Page
+              </p>
+            </a>
+
+        </div>
+
+        <!-- (The Hamburger menu) -->
+
+        <div class="hamburgerMenu">
+          <ul class="nav__menu">
+            <div class="nav__searchbar">
+              <input type="search" placeholder="Search Something..." />
+              <img src="../img/icon_logo/magnifying glass.svg" alt="magnifying glass" />
+            </div>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Donate</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Adopt</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Regenerate Australia</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">What we do</a>
+            </li>
+            <li class="nav__item button">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our stories</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Get involved</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">My Backyard</a>
+            </li>
+            <li class="nav__item button">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--* HEADER (IMAGE CAROUSEL)-->
+
+    <header class="header">
+      <div class="carousel" data-carousel>
+        <button
+          class="carousel__button carousel__button--prev"
+          data-carousel-button="prev"
+        >
+          &#8656;
+        </button>
+        <button
+          class="carousel__button carousel__button--next"
+          data-carousel-button="next"
+        >
+          &#8658;
+        </button>
+
+        <ul data-slides>
+          <li class="carousel__slide" data-active>
+            <div class="carousel__slide-text">
+              <h1>Earth Hour</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Join in</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/kangaroo.jpg"
+              alt="Kangaroo"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text">
+              <h1>Love Nature</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Take part</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/fish.jpg"
+              alt="Clown Fish"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text">
+              <h1>Save the trees</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Help now</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/ranchers.jpg"
+              alt="Ranchers"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text">
+              <h1>Adopt an animal</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Adopt</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/koala.jpg"
+              alt="Koala"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text">
+              <h1>Help Australia</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Help</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/lizards.jpg"
+              alt="A lizard couple"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text">
+              <h1>Taking back nature</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                fugiat.
+              </p>
+              <div class="button button--orange button--carousel">
+                <p class="button--text">Take it back</p>
+              </div>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/snake.jpg"
+              alt="Snake"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!--* MAIN TEXT/IMAGE CONTENT SECTION  -->
+    <main class="text-info">
+      <!--* MAIN PART 1 -->
+      <div class="text-info__cntr">
+        <h1 class="text-info__header">Explore More</h1>
+        <p class="text-info__text">
+          Find out how you can take part in our work to Regenerate Australia.
+        </p>
+      </div>
+
+      <!--* IMAGE GRID 1-->
+
+      <div class="img__grid">
+        <div class="img__grid-wrapper top-left">
+          <img src="../img/images/animals/bird.jpg" alt="Bird" />
+          <p class="img__grid-text">Birds forever</p>
+        </div>
+
+        <div class="img__grid-wrapper top-right">
+          <img src="../img/images/animals/fish.jpg" alt="Fish" />
+          <p class="img__grid-text">Saving the seas</p>
+        </div>
+
+        <div class="img__grid-wrapper bottom-left">
+          <img src="../img/images/animals/kingfisher.jpg" alt="Kingfisher" />
+          <p class="img__grid-text">Bird Breeding</p>
+        </div>
+
+        <div class="img__grid-wrapper bottom-middle">
+          <img src="../img/images/animals/koala1.jpg" alt="Koala" />
+          <p class="img__grid-text">Koala Care</p>
+        </div>
+
+        <div class="img__grid-wrapper bottom-right">
+          <img src="../img/images/animals/pelican.jpg" alt="Pelican" />
+          <p class="img__grid-text">Rewilding Nature</p>
+        </div>
+      </div>
+
+      <!--* MAIN PART 2 -->
+      <div class="text-info__cntr">
+        <h1 class="text-info__header">Get Involved</h1>
+        <p class="text-info__text">
+          Every action makes a difference. Get involved today.
+        </p>
+      </div>
+
+      <!--* MINI IMAGE CAROUSEL -->
+
+      <div class="carousel carousel--mini" data-carousel>
+        <button
+          class="carousel__button carousel__button--prev"
+          data-carousel-button="prev"
+        >
+          &#8249;
+        </button>
+        <button
+          class="carousel__button carousel__button--next"
+          data-carousel-button="next"
+        >
+          &#8250;
+        </button>
+
+        <ul data-slides>
+          <li class="carousel__slide" data-active>
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Earth Hour</h1>
+            </div>
+            <img
+              class="carousel__img carousel__img--mini"
+              src="../img/images/animals/kangaroo.jpg"
+              alt="Kangaroo"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Love Nature</h1>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/cute_animal.jpg"
+              alt="Cute animal"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Save the trees</h1>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/nature/ranchers.jpg"
+              alt="Ranchers"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Adopt an animal</h1>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/koala.jpg"
+              alt="Koala"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Help Australia</h1>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/lizards.jpg"
+              alt="A lizard couple"
+            />
+          </li>
+
+          <li class="carousel__slide">
+            <div class="carousel__slide-text carousel__slide-text--mini">
+              <h1>Taking back nature</h1>
+            </div>
+            <img
+              class="carousel__img"
+              src="../img/images/animals/snake.jpg"
+              alt="Snake"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <!--* MAIN PART 3 -->
+
+      <div class="text-info__cntr">
+        <h1 class="text-info__header">WWF - Australia in action</h1>
+        <p class="text-info__text">
+          Find out what we're doing to help people and nature across Australia and
+          the world.
+        </p>
+      </div>
+
+      <!--* IMAGE GRID 2 -->
+
+      <div class="img__grid img__grid--grid">
+        <div class="img__grid-wrapper top-left" id="left1">
+          <img src="../img/images/animals/bird.jpg" alt="Bird" />
+          <p class="img__grid-text">Species</p>
+        </div>
+        <div class="img__grid-wrapper top-right" id="left2">
+          <img src="../img/images/animals/fish.jpg" alt="Fish" />
+          <p class="img__grid-text">Oceans</p>
+        </div>
+        <div class="img__grid-wrapper bottom-left" id="right1">
+          <img src="../img/images/animals/kingfisher.jpg" alt="Kingfisher" />
+          <p class="img__grid-text">Climate</p>
+        </div>
+        <div class="img__grid-wrapper bottom-middle" id="right2">
+          <img src="../img/images/animals/koala1.jpg" alt="Koala" />
+          <p class="img__grid-text">Food</p>
+        </div>
+      </div>
+    </main>
+
+    <!--* GET UPDATES BOX -->
+
+    <section class="updatesBox">
+      <div class="updatesBox__cntr">
+        <h1 class="updatesBox__header">Get updates</h1>
+        <div class="updatesBox__inputfield">
+          <input
+            class="updatesBox__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email address"
+          />
+          <button class="button button--orange">
+            <p class="button__text">Subscribe</p>
+          </button>
+        </div>
+        <p class="updatesBox__text">
+          Subscribe to the WWF newsletter and stay up-to-date with the latest news on
+          WWF's work.
+        </p>
+      </div>
+    </section>
+
+    <!--* FOOTER SECTION -->
+
+    <footer class="footer">
+      <div class="footer__moreInfo-cntr">
+        <div class="footer__moreInfo-left">
+          <div class="footer__moreInfo-links">
+            <p>Jobs</p>
+            <p>FAQ</p>
+            <p>Update your details</p>
+            <p>Contact Us</p>
+            <p>Privacy Policy</p>
+          </div>
+          <p id="footer__moreInfo-middle">
+            WWF is Australia's most trusted conservation organisation. We acknowledge
+            the Traditional Custodians, whose land we work upon and we pay our
+            respects to their Elders past, present and emerging. At WWF, we work in
+            Australia and in our Asia-Pacific backyard to protect endangered species
+            and habitats, meet the challenge of climate change, and build a world
+            where people live in harmony with nature.
+          </p>
+          <p id="footer__moreInfo-last">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolorum.
+          </p>
+        </div>
+        <div class="footer__moreInfo-right">
+          <p>Need help?</p>
+          <p>1800 1212 1231</p>
+          <p>9am-5pm Monday to Friday (AST)</p>
+        </div>
+      </div>
+
+      <div class="footer__cntr">
+        <img class="footer__logo" src="../img/icon_logo/WWF_logo.svg.png" alt="WWF Logo" />
+        <div class="footer__icon-cntr">
+          <div class="footer__icon footer__icon--fb">
+            <img src="../img/social_media/facebook-f.svg" alt="Facebook logo" />
+          </div>
+          <div class="footer__icon">
+            <img src="../img/social_media/twitter.svg" alt="Twitter logo" />
+          </div>
+          <div class="footer__icon">
+            <img src="../img/social_media/linkedin-in.svg" alt="LinkedIn logo" />
+          </div>
+          <div class="footer__icon">
+            <img src="../img/social_media/instagram.svg" alt="Instagram logo" />
+          </div>
+          <div class="footer__icon">
+            <img src="../img/social_media/youtube.svg" alt="Youtube logo" />
+          </div>
+        </div>
+
+        <!--* Link which opens Email Client -->
+        <p class="footer__text">
+          <a href="mailto: enquiries@wwf.org.au" target="_blank">Contact Us</a>
+        </p>
+        <p class="footer__text">© WWF-Australia 2018, All rights reserved.</p>
+        <p class="footer__text">
+          Site terms Photos and graphics © WWF or used with permission. Text
+          available under Creative Commons licence.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

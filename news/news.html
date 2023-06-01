@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts.js" defer></script>
+    <!--* Media Queries -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../news/desktop.css"
+      media="screen and (min-width: 1080px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../news/tablet.css"
+      media="screen and (min-width: 751px) and (max-width: 1079px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../news/mobile.css"
+      media="screen and (max-width: 750px)"
+    />
+    <!--* Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--* Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--* Title -->
+    <title>WWF Mini Website</title>
+  </head>
+  <body>
+
+    <!-- * NAV BAR (black line)-->
+
+    <nav class="navbar">
+      <div class="navbar__cntr">
+        <div class="navbar__logo">
+          <img class="navbar__image" src="../img/icon_logo/WWF_logo.svg.png" alt="WWF Logo" />
+          <span class="navbar__bar"></span>
+          <p class="navbar__country">Australia</p>
+        </div>
+
+        <div class="navbarDesktop">
+          <div class="nav__searchbar">
+            <img src="../img/icon_logo/magnifying glass.svg" alt="magnifying glass">
+            <input type="search" placeholder="Search">
+          </div>
+          <p>What we do</p>
+          <p>About us</p>
+          <p>Our stories</p>
+          <p>Get Involved</p>
+        </div>
+
+        <div class="button button--orange">
+          <a href="../index/index.html">
+            <p class="button__text">Home Page</p>
+          </a>
+        </div>
+
+        <div class="button button--yellow">
+          <a href="../meet_the_team/meet_the_team.html">
+            <p class="button__text">Meet Our Team Page</p>
+          </a>
+        </div>
+
+        <!-- (The Hamburger menu) -->
+
+        <div class="hamburgerMenu">
+          <ul class="nav__menu">
+            <div class="nav__searchbar">
+              <input type="search" placeholder="Search Something...">
+              <img src="../img/icon_logo/magnifying glass.svg" alt="magnifying glass">
+            </div>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Donate</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Adopt</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Regenerate Australia</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">What we do</a>
+            </li>
+            <li class="nav__item button">
+              <a href="#" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Our stories</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Get involved</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">My Backyard</a>
+            </li>
+            <li class="nav__item button">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--* HEADER -->
+
+    <header class="header">
+
+      <div class="header__image-cntr">
+        <div class="header__title">
+          Current News
+        </div>
+        <div class="header__dividerLine"></div>
+      </div>
+
+    </header>
+
+    <!--* CONTACT CARD -->
+
+    <section class="contactCard">
+      <div class="contactCard__header">
+        <p class="contactCard__header-text">
+          Media Contact Information
+        </p>
+        <a class="contactCard__email" href="mailto:media@wwf.org.au">media@wwf.org.au</a>
+      </div>
+      <div class="contactCard__contact">
+        <p class="contactCard__person">
+          John Smith
+        </p>
+        <p class="contactCard__title">
+          Senior Media Officer
+        </p>
+        <p class="contactCard__details">
+          📱+61 400 985 572|🐦<a href="#">@jsmith</a>|<a href="mailto:#">📧 Email John</a>
+        </p>
+      </div>
+      <div class="contactCard__contact">
+        <p class="contactCard__person">
+          Jane Doe
+        </p>
+        <p class="contactCard__title">
+          Media Relations Manager
+        </p>
+        <p class="contactCard__details">
+          📱+61 400 985 572|<a href="mailto:#">📧 Email Jane</a>
+        </p>
+      </div>
+    </section>
+
+    <!--* NEWS CARDS -->
+
+    <main class="newsArticles">
+      <div>
+        <p class="newsArticles__header">Latest news</p>
+        <span></span>
+      </div>
+
+      <div class="newsArticles__cards">
+
+        <div class="card">
+          <div class="card__image card__image--card1"></div>
+          <div class="card__text">
+            <p class="card__title">
+              $15 billion reconstruction fund must deliver wins for people and nature
+            </p>
+            <p class="card__date">
+              29 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card2"></div>
+          <div class="card__text">
+            <p class="card__title">
+              Millions celebrate Earth Hour 2023, creating The Biggest Hour for Earth
+            </p>
+            <p class="card__date">
+              26 March 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card3"></div>
+          <div class="card__text">
+            <p class="card__title">
+              New research shows 54% of NSW's forests and woodlands are gone
+            </p>
+            <p class="card__date">
+              24 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card4"></div>
+          <div class="card__text">
+            <p class="card__title">
+              IPCC: Leaders urged to heed science and catalyse action to avert climate catastrophe
+            </p>
+            <p class="card__date">
+              21 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card5"></div>
+          <div class="card__text">
+            <p class="card__title">
+              Aussies take time out for nature this Earth Hour
+            </p>
+            <p class="card__date">
+              20 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card6"></div>
+          <div class="card__text">
+            <p class="card__title">
+              Federal Budget could shape Australia's future in the global energy transition
+            </p>
+            <p class="card__date">
+              14 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card7"></div>
+          <div class="card__text">
+            <p class="card__title">
+              Trees lower temperatures in a Sydney street by 20 degrees
+            </p>
+            <p class="card__date">
+              6 Mar 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card8"></div>
+          <div class="card__text">
+            <p class="card__title">
+              WWF welcomes creation of massive national park in north-west NSW
+            </p>
+            <p class="card__date">
+              27 Feb 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card9"></div>
+          <div class="card__text">
+            <p class="card__title">
+              WWF welcomes increased protection for Macquarie Island
+            </p>
+            <p class="card__date">
+              23 Feb 2023
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image card__image--card10"></div>
+          <div class="card__text">
+            <p class="card__title">
+              New plan to enhance sea urchin fishing & regenerate Australia's kelp forests
+            </p>
+            <p class="card__date">
+              19 Feb 2023
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+      <!--* PAGE NUMBERS -->
+
+      <div class="pageNumbers">
+        <div class="pageNumbers__circle">1</div>
+        <div class="pageNumbers__circle">2</div>
+        <div class="pageNumbers__circle">3</div>
+        <div class="pageNumbers__circle">4</div>
+        <div class="pageNumbers__circle">5</div>
+        <div class="pageNumbers__circle">6</div>
+        <div class="pageNumbers__circle">7</div>
+        <div class="pageNumbers__circle">8</div>
+        <div class="pageNumbers__circle">9</div>
+        <div class="pageNumbers__circle">10</div>
+      </div>
+
+
+      <!--* SEARCH NEWS BOX -->
+
+      <section class="searchNewsBox">
+
+        <div class="searchNewsBox__wrapper">
+          <div>
+            <p class="searchNewsBox__header">Search news</p>
+            <span></span>
+          </div>
+
+          <input class="searchNewsBox__searchbar" type="text">
+
+          <button class="button button--orange button__text button--searchNewsBox">Search</button>
+
+          <input class="searchNewsBox__goal-dropdown" type="text" list="goals" placeholder="Conversation Goals">
+          <datalist id="goals">
+            <option value="Species">Species</option>
+            <option value="Oceans">Oceans</option>
+            <option value="Food">Food</option>
+            <option value="Climate">Climate</option>
+          </datalist>
+
+          <input class="searchNewsBox__year-dropdown" type="text" list="year" placeholder="Year">
+          <datalist id="Year">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </datalist>
+        </div>
+
+      </section>
+
+      <!--* GET UPDATES BOX -->
+
+      <section class="updatesBox">
+        <div class="updatesBox__cntr">
+          <h1 class="updatesBox__header">
+            Get updates
+          </h1>
+          <div class="updatesBox__inputfield">
+            <input class="updatesBox__input" type="email" name="email" id="email" placeholder="Your email address">
+            <button class="button button--orange">
+              <p class="button__text">
+                Subscribe
+              </p>
+            </button>
+          </div>
+          <p class="updatesBox__text">
+            Subscribe to the WWF newsletter and stay up-to-date with the latest news on WWF's work.
+          </p>
+        </div>
+      </section>
+
+      <!--* FOOTER -->
+
+      <footer class="footer">
+
+        <div class="footer__moreInfo-cntr">
+          <div class="footer__moreInfo-left">
+            <div class="footer__moreInfo-links">
+              <p>Jobs</p>
+              <p>FAQ</p>
+              <p>Update your details</p>
+              <p>Contact Us</p>
+              <p>Privacy Policy</p>
+            </div>
+            <p id="footer__moreInfo-middle">
+              WWF is Australia's most trusted conservation organisation. We acknowledge the Traditional Custodians, whose land we work upon and we pay our respects to their Elders past,  present and emerging. At WWF, we work in Australia and in our Asia-Pacific backyard to protect endangered species and habitats, meet the challenge of climate change, and build a world where people live in harmony with nature.
+            </p>
+            <p id="footer__moreInfo-last">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dolorum.
+            </p>
+          </div>
+          <div class="footer__moreInfo-right">
+            <p>
+              Need help?
+            </p>
+            <p>
+              1800 1212 1231
+            </p>
+            <p>
+              9am-5pm Monday to Friday (AST)
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__cntr">
+          <img class="footer__logo" src="../img/icon_logo/WWF_logo.svg.png" alt="WWF Logo" >
+          <div class="footer__icon-cntr">
+            <div class="footer__icon footer__icon--fb">
+              <img src="../img/social_media/facebook-f.svg" alt="Facebook logo">
+            </div>
+            <div class="footer__icon">
+              <img src="../img/social_media/twitter.svg" alt="Twitter logo">
+            </div>
+            <div class="footer__icon">
+              <img src="../img/social_media/linkedin-in.svg" alt="LinkedIn logo">
+            </div>
+            <div class="footer__icon">
+              <img src="../img/social_media/instagram.svg" alt="Instagram logo">
+            </div>
+            <div class="footer__icon">
+              <img src="../img/social_media/youtube.svg" alt="Youtube logo">
+            </div>
+          </div>
+
+          <!--* Link which opens Email Client -->
+          <p class="footer__text">
+            <a href="mailto: enquiries@wwf.org.au" target="_blank">Contact Us</a>
+          </p>
+          <p class="footer__text">
+            © WWF-Australia 2018, All rights reserved.
+          </p>
+          <p class="footer__text">
+            Site terms Photos and graphics © WWF or used with permission. Text available under Creative Commons licence.
+          </p>
+        </div>
+      </footer>
+
+
+  </body>
+
+</html>

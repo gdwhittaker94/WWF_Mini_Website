@@ -1,0 +1,32 @@
+**THINGS LEARNED**
+
+INDEX:
+- Sticky nav bar that travels with scroll
+
+- Basic image carousel
+
+- Using minmax(...) with grid-template-rows in order to create pretty, responsive image grids
+
+- Using Flexbox for various things
+
+- Using '::placeholder' pseudo-element to style '<input type=search>' color.
+
+
+NEWS:
+- Using background image to fill a div/container instead of <img> tag
+
+- Using in-built VS code emojis instead of svg icons etc
+
+- Using '::after' pseudo-element to put a slightly colored element overlay and then using 'x:hover::after' to remove it on hover.
+
+- Using flexbox in news cards, giving one item a fixed sized (image on left side) so that the rest of the rest of the container is automatically occupied by the other flex item(s).
+
+
+MEET THE TEAM:
+- Using flexible grid property values in order to create a flexible picture grid-like layout on the page:
+
+    ".teamSections__people
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: minmax(150px, 1fr);"
+
+- Had to apply a :hover effect to the 'person' container in order to get the text color to change on hover, as well as a :hover effect to the image itself in order to get the image to scale up, with the :hover effect on the 'person' container making the text change color at the same time as hovering on the image since the image is contained within that container. 
