@@ -333,19 +333,19 @@ input[type="search"]::-webkit-search-cancel-button {
 /** TEAM SECTIONS */
 
 .teamInfo {
-    margin-top: 15vh;
+    margin-top: 14vh;
     display: flex;
     flex-direction: column;
     font-family: var(--open_sans);
     gap: 30px;
     padding-block-end: 30px;
     border-bottom: 2px solid hsl(150, 1%, 95%);
-    max-width: 75vw;
+    max-width: 55vw;
     margin-inline: auto;
 }
 
 .teamInfo__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     text-align: left;
     margin-bottom: 5px;
